@@ -9,7 +9,7 @@ Here's a comprehensive README.md structure for your repository, incorporating be
 
 # BinaryHood-Rahmat 
 
-![Project Banner](docs/assets/banner.png) <!-- Add relevant image path -->
+![Project Banner](src/assets/svg/logoIcon.svg) <!-- Add relevant image path -->
 
 
 ## Table of Contents
