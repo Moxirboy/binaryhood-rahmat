@@ -3,7 +3,7 @@ Here's a comprehensive README.md structure for your repository, incorporating be
 
 # Website live link 
 
-[BinaryHood](https://binaryhood-rahmat.vercel.app/)
+[Rahmat](https://binaryhood-rahmat.vercel.app/)
 
 
 
