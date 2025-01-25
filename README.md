@@ -49,7 +49,7 @@ npm run dev
 ├── .github/              # GitHub configurations
 │   └── workflows/        # CI/CD pipelines
 └── LICENSE               # MIT License
-
+```
 
 
 ## Contributing
