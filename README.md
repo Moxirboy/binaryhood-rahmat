@@ -1,14 +1,9 @@
 Here's a comprehensive README.md structure for your repository, incorporating best practices from the search results and exploring code/documentation integration:
 
-# BinaryHood-Rahmat Chatbot Project 
+# BinaryHood-Rahmat 
 
 ![Project Banner](docs/assets/banner.png) <!-- Add relevant image path -->
 
-**An intelligent chatbot implementation leveraging modern NLP techniques and web integration**
-
-[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](requirements.txt)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![Open Issues](https://img.shields.io/github/issues/Moxirboy/binaryhood-rahmat)](https://github.com/Moxirboy/binaryhood-rahmat/issues)
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
@@ -23,92 +18,39 @@ Here's a comprehensive README.md structure for your repository, incorporating be
 
 ## Project Overview
 This repository contains a full-stack chatbot implementation combining:
-- Microsoft DialoGPT-medium NLP model
-- Flask backend API
 - Modern web interface (HTML/CSS/JavaScript)
-- Conversation history tracking
 - User authentication system
 
-Inspired by BinaryHood's chatbot architecture , this implementation adds enhanced error handling and modular configuration.
-
-## Features
-```python
-# Example feature code from app/core/features.py
-class ChatFeatures:
-    SENTIMENT_ANALYSIS = True
-    CONTEXT_HANDLING = True
-    MULTI_LANGUAGE_SUPPORT = False  # Coming in v2.0
-```
+Inspired by BinaryHood's architecture , this implementation adds enhanced error handling and modular configuration.
 
 ## Installation
 ### Prerequisites
-- Python 3.8+
-- pip 20.0+
 - Node.js 14.x (for frontend build)
 
 ```bash
 # Clone repository
 git clone https://github.com/Moxirboy/binaryhood-rahmat.git
 cd binaryhood-rahmat
-
-# Install Python dependencies
-pip install -r requirements.txt
-
-# Set up environment variables
-cp .env.example .env
+npm i
+npm run dev
 ```
 
 ## Project Structure
 ```
 .
-├── src/                  # Core application logic
-│   ├── api/              # Flask endpoints
-│   ├── core/             # Business logic
-│   └── models/           # ML model handling
-├── web/                  # Frontend assets
-│   ├── static/           # CSS/JS/images
-│   └── templates/        # HTML templates
-├── tests/                # Unit and integration tests
-├── config/               # Environment configurations
-├── docs/                 # Project documentation
-├── scripts/              # Deployment/maintenance scripts
-├── .github/              # GitHub workflows
-│   └── workflows/
-├── requirements.txt      # Python dependencies
+├── web/                  # Frontend implementation
+│   ├── static/           # Static assets
+│   │   ├── css/          # Style sheets
+│   │   ├── js/           # Client-side scripts
+│   │   └── img/          # Image assets
+│   └── index.html        # Main interface
+├── docs/                 # Documentation
+│   └── assets/           # Documentation images
+├── .github/              # GitHub configurations
+│   └── workflows/        # CI/CD pipelines
 └── LICENSE               # MIT License
-```
 
-## Configuration
-Configure your environment variables in `.env`:
 
-```ini
-# .env.example
-API_KEY=your_openai_key
-MODEL_PATH=models/dialogpt-medium
-DEBUG_MODE=True
-```
-
-## API Documentation
-### Chat Endpoint
-```python
-# src/api/chat.py
-@app.route('/chat', methods=['POST'])
-def chat():
-    """
-    Process user message and return bot response
-    ---
-    parameters:
-      - name: message
-        in: formData
-        type: string
-        required: true
-    responses:
-      200:
-        description: Chat response
-    """
-    user_message = request.form['message']
-    return generate_response(user_message)
-```
 
 ## Contributing
 We welcome contributions! Please follow our [Contribution Guidelines](.github/CONTRIBUTING.md):
@@ -122,13 +64,8 @@ We welcome contributions! Please follow our [Contribution Guidelines](.github/CO
 Distributed under MIT License. See [LICENSE](LICENSE) for more information.
 
 ## Acknowledgments
-- Microsoft for DialoGPT model 
 - BinaryHood for initial inspiration 
 - Flask community for web framework
 - GitHub for repository best practices 
 
 ---
-
-**Note:** For real-time code synchronization, consider using [embedme](https://github.com/zakhenry/embedme) to keep documentation updated with source changes .
-
-This README follows GitHub's best practices for repository structure  and includes elements from successful chatbot implementations . The modular structure allows easy expansion of features while maintaining testability.
